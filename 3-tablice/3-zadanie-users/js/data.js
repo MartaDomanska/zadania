@@ -896,3 +896,5 @@ const users = [ {
         "favoriteFruit": "strawberry"
     }
 ];
+
+module.exports = users;
