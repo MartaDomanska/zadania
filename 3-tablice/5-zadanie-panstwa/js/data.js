@@ -1,4 +1,5 @@
 //dane ze strony https://www.worldometers.info/world-population/population-by-country/
+
 const countries = [
     {
         id: 1,
@@ -3030,3 +3031,5 @@ const countries = [
         world_area_in_percent: 0.00
     }
 ]
+
+module.exports = countries;
