@@ -76,3 +76,5 @@ const payments = {
     2023: null,
     2024: null
 }
+
+module.exports = payments;

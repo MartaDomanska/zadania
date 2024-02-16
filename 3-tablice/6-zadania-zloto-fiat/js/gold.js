@@ -960,3 +960,5 @@ const gold = [
         endDateTime: '2023-06-16',
     },
 ];
+
+module.exports = gold;
