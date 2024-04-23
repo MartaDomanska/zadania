@@ -16,3 +16,25 @@ const users = [
     [ 14, "Kimberli", "Berkeley", "kberkeleyd@merriam-webster.com", 19, 1994.97] ,
     [ 15, "Tawnya", "Illingworth", "tillingworthe@quantcast.com", 23, 1742.64]
 ]
+
+
+function fixData(users) {
+    const newArray = [];
+    users.map(user => {
+        const [id, name, surname, email, age, value] = user;
+        newArray.push({id,name,surname,email,age,value});
+    });
+    return newArray;
+}
+const usersFixed = fixData(users);
+console.log(usersFixed);
+
+const sumMoney = usersFixed.reduce((acc, user) => acc + user.value, 0);
+console.log(`Razem uzytkownicy maja: ${sumMoney} pieniedzy.`);
+
+const averageAge = usersFixed.reduce((acc, user) => acc + user.age, 0) / usersFixed.length;
+
+console.log(`Srednia wieku uzytkownikow to: ${averageAge} lat.`);
+
+const emails = usersFixed.map(user => user.email);
+console.log(emails);
